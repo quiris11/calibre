@@ -314,8 +314,8 @@ def create_epub_cover(container, cover_path, existing_image, options=None):
     try:
         ext = cover_path.rpartition('.')[-1].lower()
     except Exception:
-        ext = 'jpeg'
-    cname, tname = 'cover.' + ext, 'titlepage.xhtml'
+        ext = 'jpg'
+    cname, tname = 'cover.' + ext, 'cover.xhtml'
     recommended_folders = get_recommended_folders(container, (cname, tname))
 
     if existing_image:
