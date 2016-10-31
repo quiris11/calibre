@@ -655,7 +655,7 @@ class Container(ContainerBase):  # {{{
         removed_names, added_names = [], []
         for p in properties:
             if p.startswith('calibre:'):
-                ensure_prefix(self.opf, None, 'calibre', CALIBRE_PREFIX)
+                # ensure_prefix(self.opf, None, 'calibre', CALIBRE_PREFIX)
                 break
 
         for item in self.opf_xpath('//opf:manifest/opf:item'):
